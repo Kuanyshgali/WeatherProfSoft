@@ -1,0 +1,45 @@
+.hour {
+  position: relative;
+  padding-top: 20px;
+  text-align: center;
+  width: 121px;
+  height: 118px;
+  background: linear-gradient(180deg, #B32DD5 0%, rgba(217, 217, 217, 0) 100%);
+  border-radius: 25px;
+
+
+  &__icon {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__temp {
+    position: relative;
+    z-index: 1;
+  }
+
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: -22px;
+    content: '';
+    display: block;
+    width: 121px;
+    height: 72px;
+    background: linear-gradient(105.4deg, #373333 4.8%, rgba(55, 51, 51, 0) 100%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(4.5px);
+    border-radius: 25px;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-basis: 150px;
+}
+
+.container {
+  margin-bottom: 50px;
+}
+

@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+  //height: fit-content;
+
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.window {
+  box-shadow: 0 4px 4px rgba(253, 245, 245, 0.25), 0 4px 4px rgba(255, 250, 250, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 32px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  &__pages {
+    height: 100%;
+    display: flex;
+    transition: translate;
+    transition-property: transform;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+  }
+}
+
+
+
+.arrow {
+  cursor: pointer;
+
+  &:hover {
+    scale: 1.1;
+    transition-duration: 0.3ms;
+  }
+}

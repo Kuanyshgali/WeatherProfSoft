@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+
+  @media (max-width: 370px) {
+    display: block;
+  }
+}
+
+.logo {
+  display: flex;
+  &__title {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+  }
+
+  &__icon {
+    display: block;
+  }
+
+  @media (max-width: 600px) {
+    display: block;
+  }
+}
+
+.nav {
+  display: flex;
+
+  &__link {
+    display: none;
+    padding: 7px;
+
+    a {
+      border: 1px solid white;
+      border-radius: 25px;
+      padding: 10px;
+    }
+
+    &:hover {
+      scale: 1.1;
+      transition: 0.3s;
+    }
+
+    &_week {
+      display: flex;
+      align-items: center;
+    }
+
+    &_today {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

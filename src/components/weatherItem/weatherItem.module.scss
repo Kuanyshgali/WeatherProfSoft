@@ -1,0 +1,73 @@
+.container {
+  padding: 20px;
+  background: linear-gradient(112.67deg, #AD36CB 32.23%, #333333 67.37%);
+  box-shadow: 0 4px 4px rgba(253, 245, 245, 0.25), 0 4px 4px rgba(255, 250, 250, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 32px;
+  height: fit-content;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+
+  &__property {
+    @media (max-width: 450px) {
+      & + & {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  @media (max-width: 450px) {
+    display: block;
+    text-align: center;
+  }
+}
+
+.date {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  text-decoration-line: underline;
+  margin-bottom: 10px;
+}
+
+.temp_block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 350px) {
+    display: block;
+    text-align: center;
+  }
+
+  &__icon {
+    margin-right: 10px;
+    scale: 0.5;
+  }
+
+  &__icon_weather {
+    margin-left: 8px;
+    scale: 0.9;
+  }
+
+  &__temp {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    color: #F2F1F1;
+  }
+
+  &__icon_temp {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 350px) {
+      width: fit-content;
+      margin: 0 auto;
+    }
+  }
+}
+
+
