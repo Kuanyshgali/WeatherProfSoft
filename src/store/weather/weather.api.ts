@@ -11,7 +11,7 @@ export const weatherApi = createApi({
             query: (location: string) => ({
                 url: `/${location}` + '/next7days',
                 params: {
-                    key: '8FPUAH2LS3UV8KJ6S8P7C6S6X',
+                    key: 'FRCVDGSMJKPZ8FUNQ684D482Q',
                     unitGroup: 'metric',
                     contentType: 'json'
                 }
