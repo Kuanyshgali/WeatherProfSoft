@@ -17,8 +17,7 @@ const WeatherItem: FC<WeatherItemProps> = ({day, index}) => {
 
     const options: any = {month: 'short', day: 'numeric', weekday: 'short'};
     const splitDate: string[] = day.datetime.split('-')
-    const date = new Date(Date.UTC(Number(splitDate[0]), Number(splitDate[1]), Number(splitDate[2]))).toLocaleString("en-US", options)
-
+    const date = new Date(Date.UTC(Number(splitDate[0]), Number(splitDate[1]) - 1, Number(splitDate[2]))).toLocaleString("en-US", options)
 
     return (
         <div className={styles.container} onClick={clickHandler}>
@@ -50,8 +49,6 @@ const WeatherItem: FC<WeatherItemProps> = ({day, index}) => {
                     <p className={styles.features__value}>{day.windspeed} mph</p>
                 </div>
             </div>
-
-
 
         </div>
     );
