@@ -9,10 +9,11 @@ export const weatherApi = createApi({
     endpoints: build => ({
         fetchWeather: build.query<IWeather, string>({
             query: (location: string) => ({
-                url: `/${location}` + '/last7days',
+                url: `/${location}` + '/next7days',
                 params: {
-                    key: 'PMMVBLAEV72K7MNHMEMDXMQ8X',
-                    unitGroup: 'metric'
+                    key: '8FPUAH2LS3UV8KJ6S8P7C6S6X',
+                    unitGroup: 'metric',
+                    contentType: 'json'
                 }
             })
         })
